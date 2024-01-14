@@ -39,3 +39,4 @@ Users should be able to:
 -HTML
 -CSS
 -Bootstrap
+-Firefox Responsive Design Mode
