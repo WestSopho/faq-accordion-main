@@ -36,7 +36,7 @@ Users should be able to:
 
 ### Built with
 
--HTML
--CSS
--Bootstrap
--Firefox Responsive Design Mode
+- HTML
+- CSS
+- Bootstrap
+- Firefox Responsive Design Mode
