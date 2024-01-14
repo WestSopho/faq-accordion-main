@@ -1,0 +1,115 @@
+/* Importing fonts from locale */
+@font-face {
+    font-family: "Work Sans";
+    src: url("../assets/fonts/WorkSans-VariableFont_wght.ttf");
+}
+
+/* Define CSS variables */
+:root{
+    --font: "Work Sans", sans-serif;
+    --white: hsl(0, 0%, 100%);
+    --pink: hsl(275, 100%, 97%);
+    --real-pink: #AD28EB;
+    --purple-gray: hsl(292, 16%, 49%);
+    --purple-dark: hsl(292, 42%, 14%);
+}
+
+/* Normalize HTML  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+
+/* Define background base color */
+.background-base{
+    background-color: var(--pink);
+}
+
+/* Define background image for xs and s devices*/
+@media (max-width: 767px) {
+    .background-image{
+        background: no-repeat center bottom url("../assets/images/background-pattern-mobile.svg");
+        background-size: cover;
+    }
+}
+
+/* Define background image for >= m devices */
+@media (min-width: 768px) {
+    .background-image{
+        background: no-repeat center bottom url("../assets/images/background-pattern-desktop.svg");
+        background-size: cover;
+    }
+}
+
+/* Define min-height of main */
+main{
+    min-height: 100vh;
+}
+
+/* Define sizing of background image */
+.background-image{
+    min-height: 232px;
+    max-height: 320px;
+}
+
+/* Define background color for card */
+.content-wrapper{
+    background-color: var(--white);
+    max-width: 600px;
+}
+
+.button-text{
+    margin-right: 15px;
+    padding-right: 10px;
+}
+
+/* Define size of star */
+#star{
+    width: 40px;
+    height: 40px;
+}
+
+/* Define font weight of FAQs */
+#faq-title{
+    font-weight: 800;
+}
+
+/* Customize Bootstrap accordion according to design */
+.accordion{
+    --bs-accordion-active-bg: none;
+    --bs-accordion-btn-focus-border-color: white;
+    --bs-accordion-btn-focus-box-shadow: none;
+    --bs-accordion-border-color: white;
+}
+
+/* Give accordion items border */
+.accordion-item{
+    border-bottom: 1px solid var(--pink);
+}
+
+/* Customize accordion button with design's ones */
+.accordion-button{
+    color: var(--purple-dark) !important;
+    font-weight: 600 !important;
+}
+
+.accordion-button:hover{
+    color: var(--real-pink) !important;
+}
+
+.accordion-button:not(.collapsed)::after{
+    background-image: url("../assets/images/icon-minus.svg");
+    color: var(--real-pink) !important;
+}
+
+.accordion-button::after {
+    background-image: url("../assets/images/icon-plus.svg");
+}
+
+/* Give text within accordion color */
+.accordion-body{
+    color: var(--purple-gray);
+}
+
