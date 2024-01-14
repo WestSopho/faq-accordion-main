@@ -25,7 +25,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](screenshot.png)
 
 ### Links
 
@@ -36,6 +36,7 @@ Users should be able to:
 
 ### Built with
 
--HTML
--CSS
--Bootstrap
+- HTML
+- CSS
+- Bootstrap
+- Firefox Responsive Design Mode
